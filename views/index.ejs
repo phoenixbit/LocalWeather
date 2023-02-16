@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <%percnt;- include('server.js') %percnt;>
     <title>Weather Currently</title>
 </head>
 <body>
     <div class = "main-text">
         This is the Weather here at this given moment in time
+    </div>
+    <div class = "sub-text">
+        <%percnt;- CurrentTemp %percnt;> and it is 
+        <%percnt;- description %percnt;>
     </div>
     
 </body>
