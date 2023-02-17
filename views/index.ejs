@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <%percnt;- include('server.js') %percnt;>
+    <%;- include('../server.js') %> <!-- Calling the server.js file in this ejs file-->>
     <title>Weather Currently</title>
 </head>
 <body>
@@ -13,9 +13,9 @@
         This is the Weather here at this given moment in time
     </div>
     <div class = "sub-text">
-        <%percnt;- CurrentTemp %percnt;> and it is 
-        <%percnt;- description %percnt;>
+        <%= CurrentTemp %> degrees celsius and it is a
+        <%= description %> at the moment
+        <!-- Printing out the current weather locally in Dubai -->>
     </div>
-    
 </body>
 </html>
